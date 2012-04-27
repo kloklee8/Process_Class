@@ -1,6 +1,6 @@
 Discussion:
 Is this a good use of Object Oriented design? Why or why not?
-+
++This is a good use of Object Oriented design since the process will be implemented and use frequently to interact with other processes.
 
 There are different possible desired behaviors for what happens when the Process object goes out of scope:
 
@@ -13,7 +13,7 @@ There are different possible desired behaviors for what happens when the Process
     ...
 
 How might you modify your Process class to allow the programmer an easy way to use different destruction policies?
-+
++The programmer should be allowed to call on different contructor and destructors to have different destruction policies.
 
 How might you handle the case when a child process terminates before the parent process destroies it? I.e. how might the parent be signaled when a child terminates, and then read in any data it has written to its output.
-+
++The parent function will constantly check on the child processes. After a set amount of time, the parent function will automatically retrieve the information from the child.
